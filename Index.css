@@ -17,6 +17,7 @@
     "navbar"
     "main";
 }
+
 .nav-bar{
     grid-area: navbar;
     height: 13vh;
