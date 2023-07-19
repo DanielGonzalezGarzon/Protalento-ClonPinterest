@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: sans-serif;
+}
+
+.content-gnl{
+    display: grid;
+    height: 100vh;
+    gap: 10px;/* Espacio entre columnas y filas */
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "navbar"
+    "main";
+}
+.nav-bar{
+    grid-area: navbar;
+    height: 13vh;
+}
+.main-container{
+    grid-area: main;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+/* En esta seccion se esta buscando acomodar las img a tamaño */
+.main-container div img{
+    border-radius: 1.5rem;
+    margin-bottom: 0.4rem;
+    width: 35vh;
+    margin-right: 1rem;
+   /*  opacity: 1; ---con esta propiedad oculta los elementos, para el div que llevara las img con el hover */
+    
+}
+.main-container div:hover{
+    opacity: 0.8;/* Propiedad paramostrar el div el cual hay que elaborar y anclar*/
+}
+.navar-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.icon{
+    color: red;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.nav-button button{
+    background-color: none;
+    font-weight: 400;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+.nav-input input{
+    background-color: #e9e8e8;
+    font-weight: 400;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding-right: 30rem;
+}
+.nav-a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+.nav-a-right:hover{
+    background-color: #e2e0e0;
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+}
+.nav-a a{
+    display: flex;
+    color: #7e7c7c;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-left: 0.4rem;
+    text-decoration: none;
+}
+#d{
+    display: flex;
+    color: #7e7c7c;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+    text-decoration: none;  
+
+}
+/*  PTE: Cuadrar los nav-top-right, para continuar */
+/* PTE: Documentar que hace cada clase presente aqui, para leer posterior */
